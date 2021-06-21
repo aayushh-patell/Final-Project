@@ -1,0 +1,202 @@
+<head>
+	<title> About Us </title>
+	<meta charset = "utf-8"/>
+	<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = yes"/>
+
+	<!-- Links compiled stylesheet for necessary styling for this webpage -->
+	<link rel = "stylesheet" href = "Stylesheets/style.css">
+
+	<!-- Required to format the burger menu icon -->
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Links JavaScript code for the hamburger menu -->
+	<script src = "JavaScript/navigation.js"> </script>
+
+	<style>
+		h1 {
+			left: 37%;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Creates a navigation bar in order to travel through each webpage with ease -->
+	<nav class = "topnav" id = "myTopnav">
+		
+		<a href = "index.html"> Home </a>
+		<a href = "about.html" class = "active"> About Us </a>
+		<a href = "menu.html"> Menu </a>
+		<a href = "contact.html"> Contact Us </a>
+
+		<!-- Burger icon for when the navigation bar responsively shrinks on most mobile phones that activates
+        JavaScript code upon click -->
+		<a class = "icon" onclick = "myFunction()"> <i class = "fa fa-bars"></i> </a>
+  	</nav>
+
+    <header class = "container">
+		<!-- Cover image for current webpage -->
+		<img class = "coverImage" src = "Images/cover-image-2.jpg" style = "width: 100%;">
+
+		<!-- Cover image mask -->
+		<img class = "coverImageMask" src = "Images/cover-image-mask.jpg">
+
+		<!-- Title for this webpage -->
+		<h1> About Us </h1>
+	</header>
+
+    <br/>
+
+    <!-- Main content for this webpage -->
+    <main>
+        <!-- Creates a subheading for a new portion of this webpage -->
+        <h2> Our Vision </h2>
+
+        <br/>
+
+        <!-- Creates a CSS grid container -->
+        <div class = "gridContainer">
+            <!-- Discusses the vision for Le Beaux Tea -->
+            <p class = "item1">
+                Here, at Le Beaux Tea, we want to bring a fresh, friendly and enjoyable experience to your time and 
+                taste buds. To engage each one of our customers with a new, englightening experience. Our doors are 
+                always open to customers willing to try new things, come join the tea revolution.
+            </p>
+
+            <!-- Inserts an image of an ice-cream next to the previous content -->
+            <img class = "item2" src = "Images/ice-cream.jpg">
+        </div>
+
+        <br/> <br/>
+
+        <!-- Creates a subheading for a new portion of this webpage -->
+        <h2> History and Products </h2>
+
+        <br/>
+
+        <!-- Creates a CSS grid container -->
+        <div class = "gridContainer">
+            <!-- Discusses the history of bubble tea -->
+            <p class = "item3">
+                Bubble tea began life in Taiwan in the 1980’s, before spreading around the countries of East Asia 
+                and it wasn’t long before people began taking their favourite snack drink to Australia, the USA and 
+                here in Canada
+
+                Many people think the little balls at the bottom, often called boba, are the origin of the name 
+                'bubble tea', but in fact it comes from the frothy little bubbles which are made when we shake the 
+                drink to mix it all up to perfection.
+            </p>
+
+            <!-- Inserts an image of boba tea next to the previous content -->
+            <img class = "item4" src = "Images/boba-tea.jpg">
+        </div>
+
+        <br/>
+
+        <!-- Creates a CSS grid container -->
+        <div class = "gridContainer">
+            <!-- Discuesses additional produce that Le Beaux Tea offers to their customers -->
+            <p class = "item1">
+                In addition to our large selection of teas, we also offer a lovely selection of ice-creams. Ranging
+                from a simple, natural vanilla to a grand ube ice-cream with a hint of edible gold, we have it all.
+            </p>
+
+        <!-- Inserts another image of ice-cream next to the previous content -->
+            <img class = "item2" src = "Images/ice-cream.jpg">
+        </div>
+
+        <br/>
+
+        <!-- Creates a subheading for new webpage cotnent -->
+        <h2> FAQ's </h2>
+
+        <br/>
+
+        <!-- Creates a separate grid container for the FAQ's portion of this webpage -->
+        <div class = "GridContainer">
+            <h3 id = "item1"> What is Tapioca Boba? </h3>
+            <p id = "item2">
+                Tapioca boba come from the cassava root starch, brown sugar and caramel; they have a chewy 
+                gummy texture.
+            </p>
+
+            <h3 id = "item3"> What are Jellies made from? </h3>
+            <p id = "item4">
+                Our tea jellies are made from fresh produce such as strawberries, mango, and aloe vera
+            </p>
+
+            <h3 id = "item5"> What is Popping Boba? </h3>
+            <p id = "item6">
+                Popping boba look like tapioca boba but instead have juice in them and will pop in your mouth. They are really tasty 
+                and a great alternative to tapioca or jellies, and are vegan friendly.
+            </p>
+
+            <h3 id = "item7"> Do I need to add Boba in my Bubble Tea? </h3>
+            <p id = "item8">
+                Of course not, it is entirely optional. You are in charge of creating your masterpiece, and we simply compose them 
+                for you
+            </p>
+
+            <h3 id = "item9"> Are your products vegan friendly? </h3>
+            <p id = "item10">
+                Yes. All of our products are suitable for vegans.
+            </p>
+
+            <h3 id = "item11"> What's the Difference Between Green and Black Tea? </h3>
+            <p id = "item12">
+                Both come from the same plant but go through different processing. The big difference is black tea has more caffeine.
+            </p>
+        </div>
+
+        <br/>
+
+        <!-- Creates a subheading for new webpage cotnent -->
+        <h2> Facility Gallery </h2>
+
+        <br/>
+
+        <div class = "gridContainer">
+            <!-- Creates a container for the gallery slideshow -->
+            <div class = "slideShowContainer" id = "gridSlides">
+                <!-- Each one of these div tags is a new slide -->
+                <div class = "slides fade">
+                    <!-- This number signifies which of the 3 images is actively being displayed -->
+                    <div class = "numberText">1 / 3</div>
+
+                    <!-- Inserts the image for the current slide -->
+                    <img src = "Images/facility-1.jpg" style = "width:100%">
+                </div>
+            
+                <div class = "slides fade">
+                    <div class = "numberText">2 / 3</div>
+                    <img src = "Images/facility-2.jpg" style = "width:100%">
+                </div>
+            
+                <div class = "slides fade">
+                    <div class = "numberText">3 / 3</div>
+                    <img src = "Images/facility-3.jpg" style = "width:100%">
+                </div>
+            
+                <!-- Creates next and previous buttons for the slideshow. Upon click of the next or previous button, 
+                JavaScript code is activated to change the current slide that is being displayed -->
+                <a class = "prev" onclick = "plusSlides(-1)"> &#10094; </a>
+                <a class = "next" onclick = "plusSlides(1)"> &#10095; </a>
+            </div>
+
+            <p id = "gridSlidesInfo">
+                Our innovative facilities allow for maximum efficiency in our preparation process as well as 
+                providing utmost comfort for our customers. We hope for each customer to enjoy their stay in our 
+                facilities as they order their masterpiece. 
+            </p>
+        </div>
+
+        <br/>
+
+        <!-- Footer with brief copyright information -->
+        <footer>
+            <p> Le Beaux Tea - Copyright 2021</p>
+        </footer>
+
+        <!-- Links JavaScript code for the gallery slideshow -->
+	    <script src = "JavaScript/slider.js"> </script>
+    </main>
+</body>

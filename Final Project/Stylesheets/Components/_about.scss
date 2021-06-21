@@ -1,0 +1,58 @@
+$accent-colour: #ff9933;
+
+// Styles the grid containers for this webpage. It changes the display to CSS grid to allow for better 
+// responsiveness, sets the width to be 80% of the page to allow for more white space to make sure the
+// user isn't overwhelmed by an excessive amount of content. It allows the grid rows and columns to be mostly 
+// flexible in terms of their sizing and also creates a thin accent border at the bottom of the cards.
+.gridContainer {
+    display: grid;
+    grid-gap: 20px;
+    background-color: white;
+    padding: 30px;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    border-bottom: 5px solid $accent-colour;
+
+    grid-row: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+
+    grid-column: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(auto-fit, 1fr);
+}
+
+// These following stylings allow for accurate positioning for the content and images in the grid containers.
+.item1 {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+}
+
+.item2 {
+    height: 200px;
+    width: 200px;
+
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 3;
+}
+
+.item3 {
+    grid-column: 4 / span 3;
+    grid-row: 2 / span 1;
+}
+
+.item4 {
+    height: 200px;
+    width: 200px;
+
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+}
+
+#gridSlides {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+}
+
+#gridSlidesInfo {
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 1;
+}

@@ -1,0 +1,25 @@
+// Styles entire html document with uniform settings
+html {
+    background-color: #F7F7F7;
+
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+    line-height: 140%;
+}
+
+// Styles every component of the HTML body to have a margin of 10px to allow for consistent whitespace between
+// components of the website
+body {
+	margin: 10px;
+}
+
+// These following stylings create the basic template for the 2 main headings for this webpage
+h1 {
+    font-size: 64px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    text-align: center;
+}
