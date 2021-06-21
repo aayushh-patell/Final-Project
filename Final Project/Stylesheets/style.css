@@ -3,6 +3,26 @@ html {
   font-family: Helvetica, Arial, sans-serif;
   letter-spacing: 2px;
   line-height: 140%;
+  -webkit-animation: load 1s ease-out;
+          animation: load 1s ease-out;
+}
+
+@-webkit-keyframes load {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes load {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 body {
@@ -23,26 +43,28 @@ p {
   font-size: 16px;
 }
 
-.topnav {
+.nav {
   overflow: hidden;
   background-color: #333;
 }
 
-.topnav a {
+.nav a {
   float: left;
   color: #f2f2f2;
   text-align: center;
   text-decoration: none;
   padding: 20px;
   width: 25%;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
 }
 
-.topnav a:hover, .topnav a:focus {
+.nav a:hover, .nav a:focus {
   background-color: #ddd;
   color: black;
 }
 
-.topnav .active {
+.nav .active {
   background-color: #ff9933;
   color: white;
 }
@@ -51,7 +73,7 @@ footer {
   background-color: #333;
   height: 52px;
   color: white;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 footer p {
@@ -107,7 +129,7 @@ h1 {
 }
 
 .gridContainer {
-  display: -ms-grid;
+  -ms-display: grid;
   display: grid;
   grid-gap: 20px;
   background-color: white;
@@ -115,12 +137,6 @@ h1 {
   width: 80%;
   margin: 0 auto 0 auto;
   border-bottom: 5px solid #ff9933;
-  grid-row: repeat(auto-fit, 1fr);
-  -ms-grid-rows: (1fr)[auto-fit];
-      grid-template-rows: repeat(auto-fit, 1fr);
-  grid-column: repeat(auto-fit, 1fr);
-  -ms-grid-columns: (1fr)[auto-fit];
-      grid-template-columns: repeat(auto-fit, 1fr);
 }
 
 .item1 {
@@ -237,7 +253,7 @@ h1 {
 }
 
 .gridContainerFAQ {
-  display: -ms-grid;
+  -ms-display: grid;
   display: grid;
   grid-gap: 10px;
   background-color: white;
@@ -245,12 +261,6 @@ h1 {
   width: 80%;
   margin: 0 auto 0 auto;
   border-bottom: 5px solid #ff9933;
-  grid-row: repeat(auto-fit, 1fr);
-  -ms-grid-rows: (1fr)[auto-fit];
-      grid-template-rows: repeat(auto-fit, 1fr);
-  grid-column: repeat(auto-fit, 1fr);
-  -ms-grid-columns: (1fr)[auto-fit];
-      grid-template-columns: repeat(auto-fit, 1fr);
 }
 
 #item1 {
@@ -466,26 +476,21 @@ h3 {
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
   vertical-align: middle;
 }
 
-/* Slideshow container */
 .slideShowContainer {
   width: 300px;
   position: relative;
   margin: auto;
-  /* Fading animation */
-  /* Next & previous buttons */
-  /* Position the "next button" to the right */
 }
 
 .slideShowContainer .slides {
   display: none;
-  /* Number text (1/3 etc) */
 }
 
 .slideShowContainer .slides .numberText {
@@ -515,7 +520,6 @@ img {
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  /* On hover, add a black background color with a little bit see-through */
 }
 
 .slideShowContainer .prev:hover, .slideShowContainer .prev:focus, .slideShowContainer .next:hover, .slideShowContainer .next:focus {
@@ -546,7 +550,6 @@ img {
   }
 }
 
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next {
     font-size: 11px;
@@ -554,7 +557,7 @@ img {
 }
 
 .gridContainerMenu {
-  display: -ms-grid;
+  -ms-display: grid;
   display: grid;
   grid-gap: 10px;
   background-color: white;
@@ -562,13 +565,6 @@ img {
   width: 80%;
   margin: 0 auto 0 auto;
   border-bottom: 5px solid #ff9933;
-  word-wrap: break-word;
-  grid-row: repeat(auto-fit, 1fr);
-  -ms-grid-rows: (1fr)[auto-fit];
-      grid-template-rows: repeat(auto-fit, 1fr);
-  grid-column: repeat(auto-fit, 1fr);
-  -ms-grid-columns: (1fr)[auto-fit];
-      grid-template-columns: repeat(auto-fit, 1fr);
 }
 
 .menuItem1 {

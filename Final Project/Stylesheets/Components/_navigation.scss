@@ -1,6 +1,6 @@
-$accent-colour: #ff9933;
+@import "../Utils/variables";
 
-.topnav {
+.nav {
 	overflow: hidden;
 	background-color: #333;
 
@@ -11,6 +11,8 @@ $accent-colour: #ff9933;
 		text-decoration: none;
 		padding: 20px;
 		width: 25%;
+
+		transition: background-color 1s ease;
 
 		&:hover, &:focus {
 			background-color: #ddd;
