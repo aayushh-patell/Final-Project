@@ -1,0 +1,52 @@
+// Styles heading container holding all aspects of the header tag
+.container {
+	position: relative;
+	text-align: center;
+	color: white;
+	z-index: 1;
+	margin-top: 10px;
+	height: 650px;
+}
+
+// Styles the height for the cover image
+.coverImage {
+	height: 650px;
+}
+
+// Styles a black opaque mask positioned upon the the cover image to allow for visibility on the title
+.coverImageMask {
+	opacity: 0.6;
+	z-index: 2;
+	transform: translate(0%, -100%);
+	height: 650px;
+	width: 100%;
+}
+
+// Styles page heading / title to be centrally positioned upon the cover image and its mask
+h1 {
+	position: absolute;
+	text-align: center;
+	font-size: 64px;
+	top: 40%;
+	z-index: 3;
+}
+
+// Styles header components to shrink to adapt for screen sizes under 600px
+@media screen and (max-width: 600px) {
+    .coverImage {
+        height: 300px;
+    }
+
+    .coverImageMask {
+        height: 300px;
+    }
+
+    h1 {
+        font-size: 48px;
+        top: 30%;
+    }
+
+    .container {
+        height: 300px;
+    }
+}

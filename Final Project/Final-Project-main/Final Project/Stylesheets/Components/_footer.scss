@@ -1,0 +1,13 @@
+// Creates a very small footer at the bottom of the page with a Copyright slogan for Le BEaux Tea
+footer {
+    background-color: #333;
+    height: 52px;
+    color: white;
+    font-size: 10px;
+
+    p {
+        position: relative; 
+        text-align: center;
+        top: 30%;
+    }
+}
