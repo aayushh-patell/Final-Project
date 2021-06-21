@@ -6,32 +6,27 @@
 	<!-- Links compiled stylesheet for necessary styling for this webpage -->
 	<link rel = "stylesheet" href = "Stylesheets/style.css">
 
-	<!-- Required to format the burger menu icon -->
-    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<!-- Links JavaScript code for the hamburger menu -->
-	<script src = "JavaScript/navigation.js"> </script>
-
 	<style>
 		h1 {
 			left: 37%;
+		}
+
+        @media screen and (max-width: 600px) {
+			h1 {
+				left: 30%;
+			}
 		}
 	</style>
 </head>
 
 <body>
 	<!-- Creates a navigation bar in order to travel through each webpage with ease -->
-	<nav class = "topnav" id = "myTopnav">
-		
+	<nav class = "topnav">	
 		<a href = "index.html"> Home </a>
-		<a href = "about.html" class = "active"> About Us </a>
+		<a href = "about.html" class = "active"> About </a>
 		<a href = "menu.html"> Menu </a>
-		<a href = "contact.html"> Contact Us </a>
-
-		<!-- Burger icon for when the navigation bar responsively shrinks on most mobile phones that activates
-        JavaScript code upon click -->
-		<a class = "icon" onclick = "myFunction()"> <i class = "fa fa-bars"></i> </a>
-  	</nav>
+		<a href = "faq.html"> FAQ's </a>
+	</nav>
 
     <header class = "container">
 		<!-- Cover image for current webpage -->
@@ -107,53 +102,11 @@
         <br/>
 
         <!-- Creates a subheading for new webpage cotnent -->
-        <h2> FAQ's </h2>
-
-        <br/>
-
-        <!-- Creates a separate grid container for the FAQ's portion of this webpage -->
-        <div class = "GridContainer">
-            <h3 id = "item1"> What is Tapioca Boba? </h3>
-            <p id = "item2">
-                Tapioca boba come from the cassava root starch, brown sugar and caramel; they have a chewy 
-                gummy texture.
-            </p>
-
-            <h3 id = "item3"> What are Jellies made from? </h3>
-            <p id = "item4">
-                Our tea jellies are made from fresh produce such as strawberries, mango, and aloe vera
-            </p>
-
-            <h3 id = "item5"> What is Popping Boba? </h3>
-            <p id = "item6">
-                Popping boba look like tapioca boba but instead have juice in them and will pop in your mouth. They are really tasty 
-                and a great alternative to tapioca or jellies, and are vegan friendly.
-            </p>
-
-            <h3 id = "item7"> Do I need to add Boba in my Bubble Tea? </h3>
-            <p id = "item8">
-                Of course not, it is entirely optional. You are in charge of creating your masterpiece, and we simply compose them 
-                for you
-            </p>
-
-            <h3 id = "item9"> Are your products vegan friendly? </h3>
-            <p id = "item10">
-                Yes. All of our products are suitable for vegans.
-            </p>
-
-            <h3 id = "item11"> What's the Difference Between Green and Black Tea? </h3>
-            <p id = "item12">
-                Both come from the same plant but go through different processing. The big difference is black tea has more caffeine.
-            </p>
-        </div>
-
-        <br/>
-
-        <!-- Creates a subheading for new webpage cotnent -->
         <h2> Facility Gallery </h2>
 
         <br/>
 
+        <!-- This portion of the webpage was sourced from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
         <div class = "gridContainer">
             <!-- Creates a container for the gallery slideshow -->
             <div class = "slideShowContainer" id = "gridSlides">

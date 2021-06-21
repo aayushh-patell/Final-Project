@@ -8,30 +8,27 @@
 		<!-- Links compiled stylesheet for necessary styling for this webpage -->
 		<link rel = "stylesheet" href = "Stylesheets/style.css">
 
-		<!-- Required to format the burger menu icon -->
-		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-		<!-- Links JavaScript code for the hamburger menu -->
-		<script src = "JavaScript/navigation.js"> </script>
-
 		<style>
 			h1 {
 				left: 42%;
+			}
+
+			@media screen and (max-width: 600px) {
+				h1 {
+					left: 37%;
+				}
 			}
 		</style>
 	</head>
 
 	<body>
 		<!-- Creates a navigation bar in order to travel through each webpage with ease -->
-		<nav class = "topnav" id = "myTopnav">
+		<nav class = "topnav">
 			
 			<a href = "index.html"> Home </a>
-			<a href = "about.html"> About Us </a>
+			<a href = "about.html"> About </a>
 			<a href = "menu.html" class = "active" > Menu </a>
-			<a href = "contact.html"> Contact Us </a>
-
-			<!-- Burger icon for when the navigation bar responsively shrinks on most mobile phones -->
-			<a class = "icon" onclick = "myFunction()"> <i class = "fa fa-bars"></i> </a>
+			<a href = "faq.html"> FAQ's </a>
 		</nav>
 
 		<header class = "container">
